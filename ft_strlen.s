@@ -5,7 +5,7 @@ global ft_strlen
 section .text
 
 ft_strlen:
-    ;meme chose que 'mov rax, 0' mais celle-ci est une instruction plus courte qui utilise 3 octets au lieu de 7
+    ;meme chose que 'mov rax, 0' mais celle-ci est plus rapide
     xor rax, rax
 
 _loop:

@@ -19,13 +19,13 @@ _loop:
     ;'je' regarde le zero flag, s'il est egal a 1, il saute a '_end_loop'
     je _end_loop
 
-    ;incremente rax pour additionner sa valeur a l'adresse du caractere dans rdi, afin d'acceder au caractere suivant
+    ;incremente rax pour additionner sa valeur a l'adresse du caractere dans rdi et rsi, afin d'acceder au caractere suivant
     inc rax
-    ;saute au label '_loop' et refait les memes verifications suir le caractere suivant
+    ;saute au label '_loop' et refait les memes verifications pour le caractere suivant
     jmp _loop
 
 _end_loop:
     ;la fonction doit renvoyer l'adresse de la chaine de destination, donc on la met dans rax pour que ret la retourne
     mov rax, rdi
-    ;retourne a la fonction dans laquelle 'ft_strcpy a ete appelee
+    ;retourne a la fonction dans laquelle 'ft_strcpy' a ete appele
     ret
