@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-extern char *ft_strcpy(char *dest, char *src);
+extern char *ft_strcpy(char *dest, const char *src);
 
 int main()
 {
