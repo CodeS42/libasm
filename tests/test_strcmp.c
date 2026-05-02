@@ -12,14 +12,23 @@ int main()
     s1 = "Hello World!";
     s2 = "Hello World!";
 
-    result = ft_strcmp(s1, s2);
-    printf("Equal: %d\n", result);
+    printf("- With s1 = s2 -\n");
+    printf("Equal strings - ft_strcmp() result: %d\n", ft_strcmp(s1, s2));
+    printf("Equal strings - strcmp() result: %d\n", strcmp(s1, s2));
 
     s1 = "Hello World!";
     s2 = "Hello!";
+    
+    printf("- With s1 > s2 -\n");
+    printf("Different strings - ft_strcmp() result: %d\n", ft_strcmp(s1, s2));
+    printf("Different strings - strcmp() result: %d\n", strcmp(s1, s2));
 
-    result = ft_strcmp(s1, s2);
-    printf("Difference: %d\n", result);
+    s1 = "Hello!";
+    s2 = "Hello World!";
+    
+    printf("- With s1 < s2 -\n");
+    printf("Different strings - ft_strcmp() result: %d\n", ft_strcmp(s1, s2));
+    printf("Different strings - strcmp() result: %d\n", strcmp(s1, s2));
 
     return 0;
 }
