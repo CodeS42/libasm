@@ -8,6 +8,7 @@ int main()
     char *s;
 
     s = "Hello World!";
+    
     printf("- With s = 'Hello World!' -\n");
     printf("ft_strlen() result: %zu\n", ft_strlen(s));
     printf("strlen() result: %zu\n", strlen(s)); 
