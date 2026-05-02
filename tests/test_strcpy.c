@@ -6,12 +6,23 @@ extern char *ft_strcpy(char *dest, const char *src);
 
 int main()
 {
-    char *src = "Hello World!";
-    char *dest = malloc(sizeof(char) * (strlen(src) + 1));
-    char *result = NULL;
+    char *src;
+    char *dest;
+    char *result;
+    
+    src = "Hello World!";
+    dest = malloc(sizeof(char) * (strlen(src) + 1));
+    result = NULL;
 
+    printf("- With src = 'Hello World!' -\n");
     result = ft_strcpy(dest, src);
-    printf("%s\n", result);
-
+    printf("ft_strcpy() result: %s\n", result);
+    free(result);
+    
+    dest = malloc(sizeof(char) * (strlen(src) + 1));
+    result = strcpy(dest, src);
+    printf("strcpy() result: %s\n", result);
+    free(result);
+    
     return (0);
 }
