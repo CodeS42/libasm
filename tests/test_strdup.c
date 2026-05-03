@@ -31,6 +31,7 @@ int main()
     char *s;
     
     s = "Hello World!";
+    printf("\n\n===== STRDUP =====\n");
     printf("- With s = 'Hello World!' at %p -\n", s);
     results(s);
 

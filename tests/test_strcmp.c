@@ -7,11 +7,11 @@ int main()
 {
     char *s1;
     char *s2;
-    int result;
     
     s1 = "Hello World!";
     s2 = "Hello World!";
 
+    printf("\n\n===== STRCMP =====\n");
     printf("- With s1 = s2 -\n");
     printf("Equal strings - ft_strcmp() result: %d\n", ft_strcmp(s1, s2));
     printf("Equal strings - strcmp() result: %d\n", strcmp(s1, s2));

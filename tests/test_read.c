@@ -40,6 +40,7 @@ int main()
     char buff_ft_read[50];
     char buff_read[50];
 
+    printf("\n\n===== READ =====\n");
     printf("- With fd = 0 -\n");
     results(0, buff_ft_read, buff_read, 49);
 

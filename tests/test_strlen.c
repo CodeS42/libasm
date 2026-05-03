@@ -9,6 +9,7 @@ int main()
 
     s = "Hello World!";
     
+    printf("\n\n===== STRLEN =====\n");
     printf("- With s = 'Hello World!' -\n");
     printf("ft_strlen() result: %zu\n", ft_strlen(s));
     printf("strlen() result: %zu\n", strlen(s)); 

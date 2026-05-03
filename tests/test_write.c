@@ -36,6 +36,7 @@ int main()
     char *s;
     
     s = "Hello World!";
+    printf("\n\n===== WRITE =====\n");
     printf("- With s = 'Hello World!' -\n");
     results(s);
 

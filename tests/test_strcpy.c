@@ -14,6 +14,7 @@ int main()
     dest = malloc(sizeof(char) * (strlen(src) + 1));
     result = NULL;
 
+    printf("\n\n===== STRCPY =====\n");
     printf("- With src = 'Hello World!' -\n");
     result = ft_strcpy(dest, src);
     printf("ft_strcpy() result: %s\n", result);
